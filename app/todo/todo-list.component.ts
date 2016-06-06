@@ -15,7 +15,7 @@ export class TodoListComponent{
 
 	onTodoDeleted(todo: Todo){
 		if (todo) {
-			let index = this.todos.indexOf(todo);
+			let index = this.todos.indexOf(todo.title);
 			if (index > -1){
 				this.todos.splice(index, 1);
 			}
